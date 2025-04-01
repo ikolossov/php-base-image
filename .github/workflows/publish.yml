@@ -29,4 +29,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: $REGISTRY/$IMAGE:latest
+          tags: ${{ env.REGISTRY }}/${{env.IMAGE}}:latest
