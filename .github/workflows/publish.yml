@@ -11,8 +11,6 @@ env:
 jobs:
   get-latest-release:
     runs-on: ubuntu-24.04
-    outputs:
-      release_tag: ${{ steps.get_latest_release.outputs.release_tag }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
